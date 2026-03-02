@@ -2,6 +2,9 @@
 
 /* 共通
 -------------------- */
+:root {
+    --testColor:#df9ba8;
+}
 html {
     font-size: 100%;
 }
@@ -15,6 +18,13 @@ a {
 }
 img {
     max-width: 100%;
+}
+
+/* レイアウト */
+.align-center {
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 /* 見出し */
@@ -31,7 +41,12 @@ img {
 
 /* header
 -------------------- */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
 .logo {
+
     line-height: 36px;
     font-size: 30px;
 }
@@ -39,28 +54,84 @@ img {
     border-width: medium;
     border-style: solid;
 }
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+}
 a:visited {
     color: #999;
 }
 
 /* main
 -------------------- */
+/* 商品について */
 #product {
-    background: #F7F7F7;
+    background: #F7F7F7; 
+    /* background-color: var(--testColor); */
 }
+.product-area {
+    display: flex;
+    justify-content: space-around;
+}
+.product-area img {
+    width: 350px;
+}
+
+/* スタッフ紹介 */
+.staff-area {
+    display: flex;
+    justify-content: space-around;
+}
+.staff-area img {
+    width: 350px;
+}
+
+/* 申し込みの流れ */
 #request-flow {
     background: #F7F7F7;
+    /* background-color: var(--testColor); */
+}
+.flow {
+    display: flex;
+}
+.flow img {
+    width: 250px;
+}
+
+/* アクセス */
+iframe {
+    width: 1100px;
+    height: 450px;
+}
+
+/* お問い合わせ */
+.contact-area {
+    display: flex;
+    justify-content: space-around;
 }
 .content {
     border-width: thin;
     border-style: solid;
+    width: 500px;
+    height: 250px;
     border-color: #ccc;
 }
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-item {
+    border-bottom: thin;
+    border-style: solid;
+    border-color: #ccc;}
 
 /* footer
 -------------------- */
 .footer-area {
+    display: flex;
+    justify-content: space-around;
     background: #F7F7F7;
+    /* background-color: var(--testColor); */
 }
 .footer-title {
     line-height: 27px;
@@ -68,12 +139,20 @@ a:visited {
     border-bottom: medium;
     border-style: solid;
     border-color: #ccc;
+}.footer-item {
+    width: 400px;
 }
 .Copyright {
     background-color: #000;
     color: #fff;
 }
 #page-top {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
     background-color: #000;
     color: #fff;
 }
