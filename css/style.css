@@ -6,11 +6,74 @@ html {
     font-size: 100%;
 }
 body {
-    font-family: sans-serif;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+    line-height: 26px;
 }
 a {
     text-decoration: none;
+    color: #000;
 }
 img {
     max-width: 100%;
+}
+
+/* 見出し */
+.section-title {
+    line-height: 35px;
+    font-size: 28px;
+    border-bottom: thick;
+    border-style: solid;
+}
+.content-title {
+    line-height: 33px;
+    font-size: 25px;
+}
+
+/* header
+-------------------- */
+.logo {
+    line-height: 36px;
+    font-size: 30px;
+}
+.contact-btn {
+    border-width: medium;
+    border-style: solid;
+}
+a:visited {
+    color: #999;
+}
+
+/* main
+-------------------- */
+#product {
+    background: #F7F7F7;
+}
+#request-flow {
+    background: #F7F7F7;
+}
+.content {
+    border-width: thin;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+/* footer
+-------------------- */
+.footer-area {
+    background: #F7F7F7;
+}
+.footer-title {
+    line-height: 27px;
+    font-size: 20px;
+    border-bottom: medium;
+    border-style: solid;
+    border-color: #ccc;
+}
+.Copyright {
+    background-color: #000;
+    color: #fff;
+}
+#page-top {
+    background-color: #000;
+    color: #fff;
 }
