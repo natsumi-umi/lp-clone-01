@@ -23,7 +23,7 @@ img {
 /* レイアウト */
 .align-center {
     text-align: center;
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -46,13 +46,18 @@ img {
     justify-content: space-between;
 }
 .logo {
-
     line-height: 36px;
     font-size: 30px;
 }
 .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 130px;
     border-width: medium;
     border-style: solid;
+    border-color: #000;
 }
 .main-nav {
     display: flex;
@@ -110,6 +115,9 @@ iframe {
     justify-content: space-around;
 }
 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-width: thin;
     border-style: solid;
     width: 500px;
@@ -119,19 +127,30 @@ iframe {
 form {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
 }
 .form-item {
     border-bottom: thin;
     border-style: solid;
-    border-color: #ccc;}
+    border-color: #ccc;
+}
+.submit-btn {
+    width: 150px;
+    background-color: #fff;
+    color: #333;
+}
 
 /* footer
 -------------------- */
+footer {
+    background: #F7F7F7;
+    /* background-color: var(--testColor); */
+}
 .footer-area {
     display: flex;
     justify-content: space-around;
-    background: #F7F7F7;
-    /* background-color: var(--testColor); */
+    width: 1200px;
+    margin: 0 auto;
 }
 .footer-title {
     line-height: 27px;
@@ -140,19 +159,22 @@ form {
     border-style: solid;
     border-color: #ccc;
 }.footer-item {
-    width: 400px;
+    width: 350px;
 }
 .Copyright {
+    text-align: center;
     background-color: #000;
     color: #fff;
 }
 #page-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 15px;
     right: 20px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
     background-color: #000;
     color: #fff;
 }

@@ -11,12 +11,10 @@
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="align-center">
         <div class="header-top">
             <h1 class="logo"><a href="index.html">LOGO</a></h1>
-            <div class="contact-btn">
-                <a href="#contact">お問い合わせ</a>
-            </div>
+            <a href="#contact" class="contact-btn">お問い合わせ</a>
         </div>
         <nav>
             <ul class="main-nav">
@@ -31,9 +29,9 @@
     </header>
 
     <main>
-        <section class="align-center">
+        <section>
                 <img src="img/main-visual.jpg" alt="メインビジュアル">
-                <div>
+                <div class="align-center">
                     <h2 class="section-title">キャッチフレーズ</h2>
                     <p>ここにキャッチコピーが入ります。<br>お店の宣伝やコンセプトなど。魅せる文言を入力。</p>
                 </div>
@@ -103,42 +101,50 @@
             </div>
         </section>
 
-        <section id="access" class="align-center">
-            <h2 class="section-title">アクセス</h2>
-            <!-- Googleマップ埋め込み -->
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27814443.96425483!2d120.28897720705172!3d31.679877148840735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sja!2sjp!4v1555153587836!5m2!1sja!2sjp"></iframe>
+        <section id="access">
+            <div class="align-center">
+                <h2 class="section-title">アクセス</h2>
+                <!-- Googleマップ埋め込み -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27814443.96425483!2d120.28897720705172!3d31.679877148840735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sja!2sjp!4v1555153587836!5m2!1sja!2sjp"></iframe>
             </div>
         </section>
 
-        <section id="contact" class="align-center">
-            <h2 class="section-title">お問い合わせ</h2>
-            <div class="contact-area">
-                <div class="content">
-                    <img src="img/tel.png" alt="電話">
-                    <p><a href="tel:0123456789">012-345-6789</a></p>
+        <section id="contact">
+            <div class="align-center">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-area">
+                    <div class="content">
+                        <div>
+                            <img src="img/tel.png" alt="電話">
+                            <p><a href="tel:0123456789">012-345-6789</a></p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <img src="img/mail.png" alt="メール">
+                            <p><a href="mailto:simple@mail.com">simple@mail.com</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="content">
-                    <img src="img/mail.png" alt="メール">
-                    <p><a href="mailto:simple@mail.com">simple@mail.com</a></p>
-                </div>
+                <form action="example.php" method="post" name="contact-form">
+                    <div class="form-item">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" placeholder="名前を記入">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">メールアドレス</label><input type="email" id="email" placeholder="メールアドレスを記入">
+                    </div>
+                    <div class="form-item">
+                        <label for="tel">お電話番号</label><input type="tel" placeholder="お電話番号を記入">
+                    </div>
+                    <div class="form-item">
+                        <label for="message">お問い合わせ内容</label><textarea name="message" id="tel" placeholder="用件をご記入ください・・・"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" class="submit-btn" value="送信">
+                    </div>
+                </form>
             </div>
-            <form action="example.php" method="post" name="contact-form">
-                <div class="form-item">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" placeholder="名前を記入">
-                </div>
-                <div class="form-item">
-                    <label for="email">メールアドレス</label><input type="email" id="email" placeholder="メールアドレスを記入">
-                </div>
-                <div class="form-item">
-                    <label for="tel">お電話番号</label><input type="tel" placeholder="お電話番号を記入">
-                </div>
-                <div class="form-item">
-                    <label for="message">お問い合わせ内容</label><textarea name="message" id="tel" placeholder="用件をご記入ください・・・"></textarea>
-                </div>
-                <input type="submit" value="送信">
-            </form>
         </section>
     </main>
 
@@ -157,7 +163,7 @@
                 <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
             </div>
         </div>
-        <div class="Copyright align-center">
+        <div class="Copyright">
             <small>Copyright &copy; popodesign.</small>
         </div>
     </footer>
