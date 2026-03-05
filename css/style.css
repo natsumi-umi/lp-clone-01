@@ -49,6 +49,10 @@ h3 {
 
 /* header
 -------------------- */
+header {
+    padding: 20px 20px 0;
+    margin: 0 150px;
+}
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -67,19 +71,38 @@ h3 {
     border-style: solid;
     border-color: #000;
 }
+.header-top a:hover {
+    color: #999;
+}
 .main-nav {
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
+}
+.main-nav a {
+    display: flex;
+    justify-content: center;
+    width: 195px;
+    padding: 5px;
 }
 a:visited {
+    color: #666;
+}
+.main-nav a:hover {
     color: #999;
+    background-color:  #F7F7F7;
+}
+
+/* main
+-------------------- */
+/* メインビジュアル */
+main {
+    margin-top: 10px;
 }
 .catch {
     margin-bottom: 20px;
 }
 
-/* main
--------------------- */
 /* 商品について */
 #product {
     background: #F7F7F7; 
@@ -115,9 +138,15 @@ a:visited {
 }
 .flow {
     display: flex;
+    width: 100%;
+    padding-bottom: 50px;
 }
 .flow img {
     width: 250px;
+}
+.flow p {
+    text-align: left;
+    padding-left: 50px;
 }
 
 /* アクセス */
@@ -141,20 +170,52 @@ iframe {
     height: 250px;
     border-color: #ccc;
 }
+.content p {
+    margin-top: 15px;
+}
 form {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .form-item {
+    display: flex;
+    align-items: center;
+    height: 100px;
     border-bottom: thin;
     border-style: solid;
     border-color: #ccc;
 }
-.submit-btn {
+.form-item label {
+    text-align: left;
     width: 150px;
+}
+.form-item input {
+    justify-content: flex-end;
+    width: 900px;
+    height: 38px;
+    margin-left: 95px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d1d1d1;
+}
+.form-textarea {
+    height: 200px;
+}
+textarea {
+    width: 900px;
+    height: 152px;
+    margin-left: 95px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d1d1d1;
+}
+.submit-btn {
+    width: 100px;
+    height: 40px;
+    margin: 40px 0 80px;
+    font-size: 16px;
     background-color: #fff;
-    color: #333;
+    color: #666;
+    border: 1px solid #ccc;
 }
 
 /* footer
@@ -168,6 +229,7 @@ footer {
     justify-content: space-around;
     width: 1200px;
     margin: 0 auto;
+    padding: 50px 0;
 }
 .footer-title {
     line-height: 27px;
@@ -175,11 +237,18 @@ footer {
     border-bottom: medium;
     border-style: solid;
     border-color: #ccc;
-}.footer-item {
+}
+.footer-item {
     width: 350px;
+    margin-bottom: 10px;
+}
+.footer-item p {
+    padding-top: 10px;
 }
 .Copyright {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
     background-color: #000;
     color: #fff;
 }
