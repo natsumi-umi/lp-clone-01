@@ -295,7 +295,7 @@ footer {
     font-size: 32px;
     }
     .main-nav {
-        width: 480px;
+        display: none;
     }
 
     /* main */
