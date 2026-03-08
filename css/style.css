@@ -306,6 +306,15 @@ footer {
     .js-hamburger {
         /* border: none;
         background-color: #fff; */
+        width: 50px;
+        height: 50px;
+        background: url(../img/button.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+    }
+    .js-hamburger.active {
+        background-image: url(../img/button2.png);
     }
     .main-nav {
         /* display: none; */
@@ -331,6 +340,9 @@ footer {
     }
 
     /* main */
+    main {
+        transition: 0.3s;
+    }
     .main-visual img {
         width: 100%;
     }
